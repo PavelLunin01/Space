@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'spaceagecyrillic-regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('spaceagecyrillic-regular'),
+    url('../fonts/spaceagecyrillic-regular.woff2') format('woff2'),
+    url('../fonts/spaceagecyrillic-regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local('SF-Pro-Display-Regular'),
+    url('../fonts/SF-Pro-Display-Regular.woff2') format('woff2'),
+    url('../fonts/SF-Pro-Display-Regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Display-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local('SF-Pro-Display-Bold'),
+    url('../fonts/SF-Pro-Display-Bold.woff2') format('woff2'),
+    url('../fonts/SF-Pro-Display-Bold.woff') format('woff');
+  font-display: swap;
+}
