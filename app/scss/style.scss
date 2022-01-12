@@ -141,7 +141,7 @@
     line-height: 1.1;
     font-weight: 400;
     text-transform: uppercase;
-    color: $subtitle;
+    color: $blue;
   }
 
   &__content-text {
@@ -188,6 +188,71 @@
     line-height: 1.1;
     text-align: left;
     caption-side: bottom;
+  }
+}
+
+.how-to {
+
+  padding-bottom: 100px;
+  background: no-repeat top / cover;
+
+  &__box {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__box circle,
+  &__box text,
+  &__box foreignObject {
+    transition: fill 0.3s,
+    r 0.3s, color 0.3s,
+    font-size 0.3s;
+    cursor: pointer;
+  }
+
+  
+  &__box g:hover circle {
+    r: 20px;
+    fill: $blue;
+  }
+  
+  &__box g:hover text {
+    font-size: 30px;
+    fill: $blue;
+  }
+  
+  &__box foreignObject {
+    text-align: left;
+  }
+
+  &__box g:hover foreignObject {
+    font-size: 22px;
+    color: $blue;
+  }
+}
+
+.to-book {
+
+  background: no-repeat center / cover;
+  min-height: 100vh;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    width: 165px;
+    margin-top: 100px;
+    font-size: 14px;
+    line-height: 1.1;
+    margin-left: auto;
+    margin-right: 52px;
+  }
+
+  &__text+&__text {
+    margin-left: 0;
+    margin-right: 0
   }
 }
 
