@@ -1,7 +1,10 @@
+
 body {
-
+  font: 400 16px/1.1 'SF-Pro-Display-Regular',
+  sans-serif;
+  color: $white;
+  
 }
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -21,12 +24,22 @@ body {
   margin: 0 auto;
 }
 
-body {
-  font: 400 16px/1.1 'SF-Pro-Display-Regular',
-  sans-serif;
-  color: $white;
-  
+.title {
+  padding: 100px 0;
+  font-size: 48px;
+  line-height: 1;
+  @extend %space-400;
 }
+
+.button {
+  padding: 20px 45px;
+  font-size: 18px;
+  line-height: 1.1;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+}
+
+
 
 /*
 html,

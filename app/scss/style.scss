@@ -7,7 +7,7 @@
 .header {
 
   background: no-repeat center / cover;
-  
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -32,7 +32,8 @@
     &__item {
       margin-right: 30px;
     }
-    &__item:last-child  {
+
+    &__item:last-child {
       margin-right: 0;
     }
 
@@ -107,9 +108,87 @@
   &__description-text:first-child {
     margin-right: 52px;
   }
+}
 
+.about {
+
+  background: no-repeat top / cover;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+  }
+
+  &__item:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  &__content {
+    width: 600px;
+  }
+
+  &__content-title {
+    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  &__content-subtitle {
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 1.1;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $subtitle;
+  }
+
+  &__content-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__content-text p {
+    width: 165px;
+  }
+
+  &__table {
+    margin-bottom: 50px;
+  }
+
+  &__table-tr {
+
+    border: 1px solid $white;
+    border-left: none;
+    border-right: none;
+  }
+
+  &__table-tr:last-child {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__table-td {
+    padding: 10px 30px 10px 0;
+  }
+
+  &__table-td span {
+    display: block;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  &__table-caption {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.1;
+    text-align: left;
+    caption-side: bottom;
+  }
 }
 
 @import 'media';
-
-
