@@ -205,22 +205,22 @@
   &__box text,
   &__box foreignObject {
     transition: fill 0.3s,
-    r 0.3s, color 0.3s,
-    font-size 0.3s;
+      r 0.3s, color 0.3s,
+      font-size 0.3s;
     cursor: pointer;
   }
 
-  
+
   &__box g:hover circle {
     r: 20px;
     fill: $blue;
   }
-  
+
   &__box g:hover text {
     font-size: 30px;
     fill: $blue;
   }
-  
+
   &__box foreignObject {
     text-align: left;
   }
@@ -253,6 +253,181 @@
   &__text+&__text {
     margin-left: 0;
     margin-right: 0
+  }
+}
+
+.info {
+
+  padding-bottom: 100px;
+  background: no-repeat center top / cover;
+
+  .offer {
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item {
+
+      width: 500px;
+
+    }
+
+    &__item-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 400px;
+      text-align: center;
+      margin-bottom: 25px;
+      padding: 40px 75px;
+      border: 1px solid $white;
+    }
+
+    &__item-text {
+      width: 236px;
+      margin: 0 auto;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    &__item-text span {
+      color: $accent;
+    }
+
+    &__old-price {
+      position: relative;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.1;
+      text-align: right;
+    }
+
+    &__old-price::before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      right: 0;
+      transform: rotate(15deg);
+      width: 68px;
+      height: 1px;
+      background-color: $accent;
+    }
+
+    &__new-price {
+      font-size: 48px;
+      line-height: 1.2;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+  }
+}
+
+.services {
+
+  padding-bottom: 200px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box-list {
+    width: 620px;
+    margin-right: 80px;
+    font-size: 24px;
+    line-height: 1.1;
+  }
+
+  &__list-title {
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    margin-bottom: 25px;
+  }
+
+  &__list-item {
+    position: relative;
+    padding-left: 36px;
+  }
+
+  &__list-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  &__bottons {
+    width: 500px;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  &__btn--first {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  &__btn--first::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    width: 192px;
+    height: 150px;
+    background-image: url(../images/services/man.png);
+  }
+}
+
+.slider {
+
+  text-align: center;
+
+  &__inner {
+    margin-bottom: 50px;
+    padding: 100px 0;
+    border: 1px solid $white;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 1.2;
+    @extend %space-400;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  &__arrow-left {
+    left: 75px;
+  }
+
+  &__arrow-right {
+    right: 75px;
   }
 }
 
